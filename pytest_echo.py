@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import print_function
-
 import fnmatch
 import os
 from pprint import pformat
@@ -86,7 +83,7 @@ def get_module_attribute(path):
         for i, part in enumerate(parts):
             try:
                 if parent:
-                    module_name = "%s.%s" % (parent, parts[i])
+                    module_name = "{}.{}".format(parent, parts[i])
                 else:
                     module_name = parts[i]
                 pkg = __import__(module_name, fromlist=[parent])
@@ -149,7 +146,7 @@ def pytest_report_header(config):
         data = []
         for k in config.option.echo_envs:
             data.extend(get_env(k))
-        ret.append("\n".join(["    %s: %s" % (k, v)
+        ret.append("\n".join(["    {}: {}".format(k, v)
                               for k, v in sorted(data)]))
 
     if config.option.echo_versions:
@@ -157,12 +154,12 @@ def pytest_report_header(config):
         data = []
         for k in config.option.echo_versions:
             data.extend(get_version(k))
-        ret.append("\n".join(["    %s: %s" % (k, v)
+        ret.append("\n".join(["    {}: {}".format(k, v)
                               for k, v in sorted(data)]))
 
     if config.option.echo_attribues:
         ret.append("Inspections:")
-        ret.append("\n".join(["    %s: %s" % (k, get_module_attribute(k))
+        ret.append("\n".join(["    {}: {}".format(k, get_module_attribute(k))
                               for k in config.option.echo_attribues]))
     if ret:
         return "\n".join(ret)

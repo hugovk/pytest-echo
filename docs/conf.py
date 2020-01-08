@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #
 # pytest-echo documentation build configuration file, created by
 # sphinx-quickstart on Mon Jun 18 21:42:25 2012.
@@ -40,8 +39,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'pytest-echo'
-copyright = u'2014, Stefano Apostolico'
+project = 'pytest-echo'
+copyright = '2014, Stefano Apostolico'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -183,8 +182,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'pytest-echo.tex', u'pytest-echo Documentation',
-   u'Stefano Apostolico', 'manual'),
+  ('index', 'pytest-echo.tex', 'pytest-echo Documentation',
+   'Stefano Apostolico', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -213,8 +212,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'pytest-echo', u'pytest-echo Documentation',
-     [u'Stefano Apostolico'], 1)
+    ('index', 'pytest-echo', 'pytest-echo Documentation',
+     ['Stefano Apostolico'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -227,8 +226,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'pytest-echo', u'pytest-echo Documentation',
-   u'Stefano Apostolico', 'pytest-echo', '-',
+  ('index', 'pytest-echo', 'pytest-echo Documentation',
+   'Stefano Apostolico', 'pytest-echo', '-',
    'Miscellaneous'),
 ]
 
