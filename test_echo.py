@@ -137,10 +137,7 @@ def test_echo_attr_object_attr(testdir):
 
 def test_echo_attr_module_object_attr(testdir):
     result = testdir.runpytest('--echo-attr=linecache.cache.__class__')
-    if sys.version_info[0] == 2:
-        match = "    linecache.cache.__class__: <type 'dict'>"
-    else:
-        match = "    linecache.cache.__class__: <class 'dict'>"
+    match = "    linecache.cache.__class__: <class 'dict'>"
 
     result.stdout.fnmatch_lines([match])
 
