@@ -35,7 +35,7 @@ Dump environment variables
 
     $ py.test --echo-env=HOME
     ============================= test session starts =========================
-    platform linux2 -- Python 2.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
+    platform linux2 -- Python 3.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
     Environment:
         HOME: /Users/sax
     plugins: echo, pydev, cov, cache, django
@@ -48,7 +48,7 @@ Dump package version
 
     $ py.test --echo-version=pytest_echo
     ============================= test session starts =========================
-    platform linux2 -- Python 2.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
+    platform linux2 -- Python 3.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
     Package version:
         pytest_echo: 0.1
     plugins: echo, pydev, cov, cache, django
@@ -67,7 +67,7 @@ Dump attributes
 
     $ py.test --echo-attr=django.conf.settings.DEBUG
     ============================= test session starts =========================
-    platform linux2 -- Python 2.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
+    platform linux2 -- Python 3.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
     Inspections
         django.conf.settings.DEBUG: False
     plugins: echo, pydev, cov, cache, django
@@ -104,7 +104,7 @@ Example of use in a django project:
 
     $ py.test
     ============================= test session starts =========================
-    platform linux2 -- Python 2.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
+    platform linux2 -- Python 3.7.4 -- py-1.4.22 -- pytest-2.6.0 -- /bin/python
     Environment:
         DJANGO_SETTINGS_MODULE: tests.settings
         PWD: /data/PROGETTI/sem
